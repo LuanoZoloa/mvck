@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrito — MVCK1997</title>
+<title>Nuestra filosofía — MVCK1997</title>
+<meta name="description" content="MVCK1997. Reconstruyendo identidades desde Necochea, Argentina.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 
 <div class="nav-overlay"></div>
 
-<header class="site-header solid">
+<header class="site-header">
   <div class="wrap">
     <a href="index.html" class="logo-mark">
       <img src="img/brand/logo-mark.png" alt="MVCK1997">
@@ -22,8 +23,8 @@
     <nav class="main-nav">
       <a href="index.html">Inicio</a>
       <a href="categoria.html">Catálogo</a>
-      <a href="filosofia.html">Filosofía</a>
-      <a href="carrito.html" class="active">Carrito</a>
+      <a href="filosofia.html" class="active">Filosofía</a>
+      <a href="carrito.html">Carrito</a>
     </nav>
     <div class="header-icons">
       <button class="icon-btn" aria-label="Buscar">
@@ -38,46 +39,59 @@
   </div>
 </header>
 
-<div class="wrap">
-  <div class="page-banner" style="padding-top:0;border-bottom:none;">
-    <div class="breadcrumb"><a href="index.html">Inicio</a> / Carrito</div>
-    <h1>Tu carrito</h1>
+<section class="ph-hero">
+  <img src="img/lifestyle/portrait_evolvement_sunset.jpg" alt="MVCK1997 — Nuestra filosofía">
+  <div class="wrap ph-hero-caption">
+    <div class="eyebrow"><span class="diamond"></span>Nuestra filosofía</div>
+    <h1>Reconstruyendo<br>identidades.</h1>
   </div>
+</section>
 
-  <div class="cart-layout" id="cartLayout" style="padding-top:20px;">
-    <div>
-      <div id="cartList"></div>
-    </div>
-
-    <div class="summary-box">
-      <h3>Resumen del pedido</h3>
-      <div class="summary-row"><span>Subtotal</span><span id="subtotalAmount">$0</span></div>
-      <div class="summary-row"><span>Envío</span><span id="shippingAmount">$0</span></div>
-      <div class="summary-row total"><span>Total</span><span id="totalAmount">$0</span></div>
-
-      <div class="promo-row">
-        <input type="text" placeholder="Código de descuento">
-        <button class="btn btn-outline" type="button">Aplicar</button>
-      </div>
-
-      <a href="#" class="btn btn-primary btn-full">Continuar compra</a>
-
-      <div class="trust-note">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
-        <span>Pago seguro. Envío gratis en compras mayores a $80.000.</span>
-      </div>
-    </div>
+<section class="statement reveal">
+  <div class="wrap">
+    <p>No hacemos ropa desechable. Diseñamos prendas con estructura e intención, para quienes construyen su identidad sin seguir el paso de nadie.</p>
   </div>
+</section>
 
-  <div class="empty-cart" id="emptyState" style="display:none;">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 7h15l-1.5 9.5a2 2 0 0 1-2 1.7H8.7a2 2 0 0 1-2-1.7L5 4H2"/><circle cx="9" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
-    <h2>Tu carrito está vacío</h2>
-    <p>Todavía no agregaste productos. Explorá el catálogo y encontrá tu próxima prenda.</p>
-    <a href="categoria.html" class="btn btn-primary">Ir al catálogo</a>
+<section class="split-block reveal">
+  <div class="ph-media">
+    <img src="img/lifestyle/street_evolvement_crosswalk.jpg" alt="Calles de Necochea">
   </div>
-</div>
+  <div class="ph-copy">
+    <div class="eyebrow"><span class="diamond"></span>Origen</div>
+    <p>Cada prenda nace y se fotografía en Necochea. La calle, el mar y el cemento son parte del proceso, no solo el fondo.</p>
+  </div>
+</section>
 
-<footer style="margin-top:110px;">
+<section class="split-block reverse reveal">
+  <div class="ph-media">
+    <img src="img/product/hoodie_saints_green.jpg" alt="Detalle de producto MVCK1997">
+  </div>
+  <div class="ph-copy">
+    <div class="eyebrow"><span class="diamond"></span>Proceso</div>
+    <p>Cortes oversize, gráficos propios y materiales seleccionados. Producción en tiradas cortas, pensadas para durar.</p>
+  </div>
+</section>
+
+<section class="split-block reveal">
+  <div class="ph-media">
+    <img src="img/product/tee_sukuna_back.jpg" alt="Gráfico MVCK1997">
+  </div>
+  <div class="ph-copy">
+    <div class="eyebrow"><span class="diamond"></span>Identidad</div>
+    <p>No seguimos una temporada. Construimos un lenguaje visual propio, prenda por prenda, drop por drop.</p>
+  </div>
+</section>
+
+<section class="ph-closing reveal">
+  <img src="img/lifestyle/street_evolvement_crosswalk.jpg" alt="MVCK1997 Necochea">
+  <div class="wrap ph-closing-content">
+    <h2>La colección completa<br>te espera.</h2>
+    <a href="categoria.html" class="btn btn-primary">Ver catálogo</a>
+  </div>
+</section>
+
+<footer>
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
