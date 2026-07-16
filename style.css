@@ -194,7 +194,8 @@ p{line-height:1.7;color:var(--gray-400);font-size:15px;}
 /* ---------- Hero ---------- */
 .hero{
   position:relative;
-  height:calc(100vh - var(--nav-h));min-height:560px;
+  margin-top:calc(-1 * var(--nav-h));
+  height:100vh;min-height:560px;
   display:flex;align-items:flex-end;color:var(--white);overflow:hidden;
 }
 .hero-media{position:absolute;inset:0;z-index:1;}
@@ -208,19 +209,12 @@ p{line-height:1.7;color:var(--gray-400);font-size:15px;}
   content:'';position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(10,10,9,.05) 0%,rgba(10,10,9,.35) 55%,rgba(10,10,9,.92) 100%);
 }
-.hero-content{position:relative;z-index:2;padding-bottom:64px;width:100%;}
+.hero-content{position:relative;z-index:2;padding-bottom:36px;width:100%;}
 .hero h1{
-  font-size:clamp(30px,5.1vw,64px);
-  max-width:680px;margin-bottom:16px;
+  font-size:clamp(22px,3.6vw,44px);
+  max-width:600px;margin-bottom:16px;
 }
-.hero p{color:var(--off);max-width:380px;margin-bottom:28px;font-size:13.5px;}
 
-.scroll-cue{
-  position:absolute;bottom:30px;right:var(--gutter);z-index:2;
-  display:flex;align-items:center;gap:10px;color:var(--gray-400);
-  font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-}
-.scroll-cue::before{content:'';width:1px;height:38px;background:var(--gray-500);display:block;}
 
 /* ---------- Sections ---------- */
 section{padding:120px 0;}
@@ -427,7 +421,7 @@ footer{background:var(--black);color:var(--gray-400);padding:100px 0 30px;border
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
 /* ---------- Philosophy page ---------- */
-.ph-hero{position:relative;height:calc(100vh - var(--nav-h));min-height:520px;overflow:hidden;}
+.ph-hero{position:relative;margin-top:calc(-1 * var(--nav-h));height:100vh;min-height:520px;overflow:hidden;}
 .ph-hero img{width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:grayscale(.15) contrast(1.05);}
 .ph-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,9,.1) 0%,rgba(10,10,9,.15) 60%,rgba(10,10,9,.85) 100%);}
 .ph-hero-caption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 0 56px;}
