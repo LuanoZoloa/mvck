@@ -18,7 +18,8 @@
   --gold:#b89a5c;
 
   --font-display:'Archivo Expanded', 'Archivo', sans-serif;
-  --font-body:'Inter', sans-serif;
+  --font-body:'General Sans', 'Inter', sans-serif;
+  --font-brand:'Clash Display', 'Archivo Expanded', sans-serif;
 
   --container:1180px;
   --gutter:32px;
@@ -209,15 +210,25 @@ p{line-height:1.7;color:var(--gray-400);font-size:15px;}
   content:'';position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(10,10,9,.42) 0%,rgba(10,10,9,.1) 16%,rgba(10,10,9,.32) 55%,rgba(10,10,9,.92) 100%);
 }
-.hero-content{position:relative;z-index:2;padding-bottom:10px;width:100%;}
-.hero h1{
-  font-family:var(--font-body);
-  font-weight:300;
+.hero-content{position:relative;z-index:2;padding-bottom:72px;width:100%;}
+.hero-block{max-width:420px;text-align:left;}
+
+.hero-brand{
+  font-family:var(--font-brand);
+  font-weight:600;
   text-transform:uppercase;
-  letter-spacing:.005em;
-  white-space:nowrap;
-  font-size:clamp(15px,3.8vw,44px);
-  max-width:none;margin-bottom:22px;
+  letter-spacing:.04em;
+  font-size:clamp(28px,3.6vw,46px);
+  line-height:1;
+  margin-bottom:14px;
+}
+.hero-tagline{
+  font-family:var(--font-body);
+  font-weight:400;
+  color:var(--off);
+  font-size:14px;
+  letter-spacing:.01em;
+  margin-bottom:34px;
 }
 
 .btn-hero{
